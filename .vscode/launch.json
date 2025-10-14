@@ -1,0 +1,29 @@
+{
+    "configurations": [
+
+        // -------------------------       PYTHON
+
+        {
+            "name": "Run UI Demo",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/00_UIdemo_ps.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "justMyCode": true,
+            "python": "${workspaceFolder}/.venv/bin/python"
+        },
+        {
+            "name": "UI Template",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/01_UItemplate_GfCS.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "justMyCode": true,
+            "python": "${workspaceFolder}/.venv/bin/python"
+        },
+
+    ],
+    "version": "2.0.0"
+}
