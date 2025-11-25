@@ -40,20 +40,20 @@ Theta_analytic = ...
 U = np.zeros_like(T)
 V = np.zeros_like(T)
 
-# initialize e1(0) = Frenet normal at 0
+# initialize U(0) = Frenet normal at 0
 
 U[0] = ...
 V[0] = ...
 
 for i in range(n-1):
     # RMF propagation via projection + normalization 
-    # project e1(i) onto plane normal to T(i+1) and normalize
+    # project U(i) onto plane normal to T(i+1) and normalize
     U[i+1] = ...
     V[i+1] = ...
 
 
 
-#%% RMF torsion angle = angle between N(s) and e1(s) for all s
+#%% RMF torsion angle = angle between N(s) and U(s) for all s
 angle = np.arctan2( (np.cross(U,N)*T).sum(1), (U*N).sum(1) )
 Theta_RMF = np.unwrap(angle) #makes it continuous (no jumps at ±π)
 
